@@ -22,7 +22,7 @@ pub mod biblioteca {
     Parametros de entrada:
         * nombre -> nombre de la biblioteca -> tipo string
      */
-    pub fn crear_biblioteca(context: Context<NuevaBiblioteca>, nombre: String) -> Result<()> {
+    pub fn crear_biblioteca_de_videojuegos:(context: Context<NuevaBiblioteca>, nombre: String) -> Result<()> {
         // "Context" siempre suele ir como primer parametro, ya que permite acceder al objeto o cuenta con el que queremos interactuar
         // Dentro del context va al tipo de objeto o cuenta con el que deseamos interactuar. 
         let owner_id = context.accounts.owner.key(); // Accedemos al wallet address del caller 
